@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140324205947) do
+ActiveRecord::Schema.define(version: 20140325194419) do
 
   create_table "spree_addresses", force: true do |t|
     t.string   "firstname"
@@ -727,6 +727,7 @@ ActiveRecord::Schema.define(version: 20140324205947) do
     t.boolean  "track_inventory",                         default: true
     t.integer  "tax_category_id"
     t.datetime "updated_at"
+    t.decimal  "sale_price",      precision: 8, scale: 2
   end
 
   add_index "spree_variants", ["product_id"], name: "index_spree_variants_on_product_id"

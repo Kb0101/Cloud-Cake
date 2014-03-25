@@ -32,6 +32,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -44,6 +45,13 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'spree', '2.2.0'
+gem 'spree', github: 'spree/spree', branch: '2-2-stable'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-2-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-2-stable'
+# gem 'spree_fancy', :github => 'spree/spree_fancy'
+# bottom line is an extension that changes visuals
+
+gem 'spree_simple_sales', :path => '../spree_simple_sales'
+# sales extension
+
+
